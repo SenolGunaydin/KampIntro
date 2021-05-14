@@ -10,3 +10,4 @@ namespace OOP2
         public string MusteriNo { get; set; }
     }
 }
+//

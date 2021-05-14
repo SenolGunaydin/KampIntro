@@ -6,33 +6,29 @@ namespace OOP2
     {
         static void Main(string[] args)
         {
-            GercekMusteri gercekMusteri = new GercekMusteri();
-
-            gercekMusteri.MusteriNo = "12345";
-            gercekMusteri.MusteriAdi = "Şenol";
-            gercekMusteri.MusteriSoyadi = "Günaydın";
-            gercekMusteri.TcNo = "22222222222";
-            gercekMusteri.Id = 1;
-
-            TuzelMusteri tuzelMusteri = new TuzelMusteri();
-
-            tuzelMusteri.MusteriNo = "654321";
-            tuzelMusteri.SirketAdi = "kodlama.io";
-            tuzelMusteri.Id = 2;
-            tuzelMusteri.VergiNo = "1111111111111";
+            GercekMusteri musteri1 = new GercekMusteri();
+            musteri1.MusteriNo = "12356";
+            musteri1.Adi = "Senol";
+            musteri1.Soyadi = "Günaydın";
+            musteri1.TcNo = "22222222222";
+            musteri1.Id = 1;
 
 
+            TuzelMusteri musteri2 = new TuzelMusteri();
+            musteri2.Id = 2;
+            musteri2.MusteriNo = "54321";
+            musteri2.SirketAdi = "Kodlama.io";
+            musteri2.VergiNo = "1234567890";
 
 
+            ////////////////////////////////////////////////////////////
 
+            Musteri musteri3 = new GercekMusteri();
+            Musteri musteri4 = new TuzelMusteri();
 
-
-            Musteri musteri = new GercekMusteri();
-            Musteri musteri2 = new TuzelMusteri();
-
-            CustomerManager customerManager = new CustomerManager();
-            customerManager.Add(gercekMusteri);
-            customerManager.Add(tuzelMusteri);
+            MusteriManager musteriManager = new MusteriManager();
+            musteriManager.Ekle(musteri1);
+            musteriManager.Ekle(musteri2);
         }
     }
 }

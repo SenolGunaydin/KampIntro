@@ -4,10 +4,10 @@ using System.Text;
 
 namespace OOP2
 {
-   public class GercekMusteri : Musteri
+    public class GercekMusteri : Musteri// miras --> inheritance
     {
-        public string MusteriAdi { get; set; }
-        public string MusteriSoyadi { get; set; }
         public string TcNo { get; set; }
+        public string Adi { get; set; }
+        public string Soyadi { get; set; }
     }
 }
