@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP3
+namespace Oop3
 {
     public class IhtiyacKrediManager : IKrediManager
     {
@@ -13,7 +13,7 @@ namespace OOP3
 
         public void Hesapla()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("İhtiyaç kredisi ödeme planı hesaplandı.");
         }
     }
 }
